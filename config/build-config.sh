@@ -54,7 +54,7 @@ system_config() {
 sources_config() {
   if [[ "$1" == *"debian-"* ]]; then
     local version="${DEBIAN_VERSION:-trixie}"
-    echo "DEBIAN_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/debian/"
+    echo "DEBIAN_MIRROR=https://mirror.truenetwork.ru/debian/"
     echo "DEBIAN_SECURITY_MIRROR=http://security.debian.org/debian-security"
   elif [[ "$1" == *"ubuntu-"* ]]; then
     local version="${UBUNTU_VERSION:-resolute}"
