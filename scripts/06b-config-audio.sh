@@ -25,9 +25,6 @@ CONFIG_DIR="$SCRIPT_DIR/../config"
 echo "[$(date +'%Y-%m-%d %H:%M:%S')] [06b] 🔊 配置音频服务 (Raphael)"
 
 _use_pulseaudio=false
-if chroot rootdir apt-cache show pulseaudio >/dev/null 2>&1; then
-	_use_pulseaudio=true
-fi
 
 # 新版 GNOME：仓库仍可能有 pulseaudio 包，但桌面/Remote Login 依赖 PipeWire
 _force_pw_gnome=false
